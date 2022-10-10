@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 500px;
+    height: 500px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 60px;
+    color: orange;
+}
+
+p {
+    font-size: 26px;
+}
