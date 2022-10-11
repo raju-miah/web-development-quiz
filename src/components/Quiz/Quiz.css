@@ -1,0 +1,27 @@
+.quiz-card {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #222831;
+    color: #F9F9F9;
+}
+
+.quiz-card img {
+    width: 250px;
+    height: 250px;
+}
+
+.start-quiz-btn {
+    font-size: 20px;
+    width: 40%;
+    padding: 10px;
+    color: #F9F9F9;
+    background-color: orange;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-quiz-btn:hover {
+    background-color: rgb(71, 50, 187);
+    color: orange;
+}

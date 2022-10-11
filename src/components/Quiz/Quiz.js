@@ -1,12 +1,14 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import './Quiz.css';
 
-const Quiz = () => {
-    const quiz = useLoaderData();
+const Quiz = ({ quizTopic }) => {
+    const { name, logo, total } = quizTopic;
     return (
-        <div>
-            <h2>This is Quiz: {quiz.length}</h2>
-            <p>Name: {quiz.name}</p>
+        <div className='quiz-card'>
+            <img src={logo} alt="" />
+            <h3>{name}</h3>
+            <p>total: {total}</p>
+            <button className='start-quiz-btn'>Start Quiz</button>
         </div>
     );
 };

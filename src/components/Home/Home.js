@@ -1,7 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import img from '../../header.jpg';
+import Quiz from '../Quiz/Quiz';
 import './Home.css';
 const Home = () => {
+    const quizTopics = useLoaderData().data;
     return (
         <div>
             <div className='home'>
@@ -14,6 +17,14 @@ const Home = () => {
                 <div className='home-img'>
                     <img src={img} alt="" />
                 </div>
+            </div>
+            <div className='card'>
+                {
+                    quizTopics.map(quizTopic => <Quiz
+                        key={quizTopic.id}
+                        quizTopic={quizTopic}
+                    ></Quiz>)
+                }
             </div>
 
         </div>
