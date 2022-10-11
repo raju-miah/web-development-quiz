@@ -8,7 +8,7 @@ const Quiz = ({ quizTopic }) => {
         <div className='quiz-card'>
             <img src={logo} alt="" />
             <h3>{name}</h3>
-            <p>total: {total}</p>
+            <p>Total Quiz: {total}</p>
             <Link to={`/quiz/${id}`}>
                 <button className='start-quiz-btn'>Start Quiz</button>
             </Link>
