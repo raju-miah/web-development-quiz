@@ -1,3 +1,5 @@
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './QuizQuestion.css';
 const QuizQuestion = ({ quizQuestion }) => {
@@ -5,11 +7,10 @@ const QuizQuestion = ({ quizQuestion }) => {
     return (
         <div className='quiz'>
             <h1>{question}</h1>
+            <button className='eye-btn'>
+                <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+            </button>
             <div className='options'>
-                {/* <p>{options[0]}</p>
-                <p>{options[1]}</p>
-                <p>{options[2]}</p>
-                <p>{options[3]}</p> */}
                 <button>{options[0]}</button>
                 <button>{options[1]}</button>
                 <button>{options[2]}</button>

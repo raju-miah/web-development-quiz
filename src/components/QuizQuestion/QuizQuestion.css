@@ -22,3 +22,11 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.eye-btn {
+    color: #38E54D;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #222831;
+    border: none;
+}
