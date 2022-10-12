@@ -1,4 +1,11 @@
 .rechart-text {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
+    padding: 20px;
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import img from '../../header.jpg';
 import Quiz from '../Quiz/Quiz';
 import './Home.css';
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
                     <p>You are find this page, that's mean you doing awesome! <br />Let's get started with your web development IQ <br />Are you ready</p>
                 </div>
                 <div className='home-img'>
-                    <img src={img} alt="" />
+                    <img src="https://i.ibb.co/WfQx4gC/header.jpg" alt="" />
                 </div>
             </div>
             <div className='card'>

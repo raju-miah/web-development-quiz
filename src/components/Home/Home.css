@@ -31,3 +31,25 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    .home {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-text h4 {
+        font-size: 50px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
