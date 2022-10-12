@@ -23,15 +23,15 @@ const QuizQuestion = ({ quizQuestion }) => {
     }
 
 
-    const notify = () => {
+    const eyeCorrectAnsToast = () => {
         toast.success(`${correctAnswer}`)
     }
 
 
     return (
         <div className='quiz'>
-            <h1>{question}</h1>
-            <button onClick={notify} className='eye-btn'>
+            <h1>{question.slice(3, -4)}</h1>
+            <button onClick={eyeCorrectAnsToast} className='eye-btn'>
                 <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
             </button>
 
