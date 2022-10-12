@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
+import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Statistics from './components/Statistics/Statistics';
@@ -42,7 +43,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div>404: This route not found</div>
+      element: <Error></Error>
     }
   ])
   return (
